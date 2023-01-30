@@ -1,3 +1,17 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from AppCoder import *
 
-# Create your views here.
+from .models import *
+
+#PONER UN IMPORT FORMSSSS
+
+def Introduccion(request):
+    return render(request, "AppCoder/Introduccion.html")
+
+def sobremi(request):
+    return render(request, "AppCoder/sobremi.html")
+
+
+
+
