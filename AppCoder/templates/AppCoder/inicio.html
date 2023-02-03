@@ -1,0 +1,35 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+
+    
+  
+
+    
+
+
+
+
+    </form>
+
+    
+
+    {% if Economia %}
+
+    <p>Estamos buscando el: {{Economia}}</p>
+
+    <ul>
+	{% for Economia in Economia %}
+		<li> {{Economia.nombre}} </li>
+		<li> {{Economia.camada}} </li>
+	{% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+{% endblock %}
